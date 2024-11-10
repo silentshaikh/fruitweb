@@ -1,0 +1,43 @@
+.con{
+    text-align: center;
+    color: #34e7e4;
+    font-size: 2.5rem;
+}
+.formCont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+.formCont label{
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding: 10px 0;
+}
+.formCont input{
+    width: 50vw;
+    padding: 12px 15px;
+    outline: none;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border: none;
+}
+.formCont textarea{
+    resize: none;
+    width: 50vw;
+    padding: 15px;
+    outline: none;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border: none;
+}
+.formCont button{
+    position: relative;
+    top: 10px;
+    padding: 10px 25px;
+    background-color: #34e7e4;
+    border: none;
+    color: #ffff;
+    transition: 2s;
+    cursor: pointer;
+}

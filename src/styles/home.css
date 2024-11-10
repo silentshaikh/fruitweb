@@ -1,0 +1,273 @@
+.homeCont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+.hBoxOne img{
+    width: 35vw;
+}
+.hBoxTwo h1{
+    font-size: 3rem;
+    width: 300px;
+}
+.hBoxTwo p{
+    width: 40vw;
+    font-family: "Poppins";
+    font-weight: 600;
+}
+.hBoxTwo button{
+    margin-top: 5px;
+    background-color: #34e7e4;
+ color: #fff;
+ border: none;
+ border-radius: 5px;
+ padding: 12px 26px;
+ cursor: pointer;
+ transition: 2s;
+ font-size: 1rem;
+}
+.homeContTwo{
+    padding-top: 30px;
+}
+.prodCard{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.homeContTwo h1{
+    font-size: 3rem;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.card{
+    background-color: hsl(0, 0%, 95%);
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-align: center;
+    transform: skewY(4deg);
+}
+.card img{
+    width: 180px;
+}
+.card p{
+    font-family: "Poppins";
+    font-weight: 600;
+}
+.homeSubs{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.homeSubs img{
+    width: 80vw;
+    border-radius: 25px;
+    filter: blur(5px);
+    z-index: -1;
+}
+.homeSubs h1{
+    position: absolute;
+    top: 30px;
+    font-size: 3.1rem;
+    color: #fff;
+    width: 300px;
+}
+.homeSubs form{
+ position: absolute; 
+ top: 200px;  
+ bottom: 120px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+.homeSubs form input{
+padding: 20px 210px;
+ border-radius: 25px;
+ outline: none;
+ border: none;
+}
+.homeSubs form button{
+ padding: 15px 30px;
+ margin-top: 5px;
+ background-color: #34e7e4;
+ color: #fff;
+ border: none;
+ border-radius: 5px;
+ cursor: pointer;
+ font-family: "Poppins";
+ transition: 2s;
+}
+.homeSubs form button:hover{
+    transform: skewX(6deg);
+}
+@media only screen and (max-width:643px) {
+    .homeCont{
+        flex-direction: column;
+    }
+    .hBoxTwo h1{
+        width: 400px;
+    }
+    .hBoxTwo p{
+        width: 400px;
+    }
+    .hBoxOne img{
+        width: 45vw;
+    }
+}
+@media only screen and (max-width:474px) {
+   
+    .hBoxTwo h1{
+        width: 300px;
+        font-size: 2.4rem;
+    }
+    .hBoxTwo p{
+        width: 300px;
+        font-size: 15px
+    }
+    .hBoxOne img{
+        width: 45vw;
+    }
+}
+@media only screen and (max-width:1183px) {
+    .homeSubs h1{
+        width: 80vw;
+        text-align: center;
+    }
+    .homeSubs form{
+        top: 140px;
+    }
+}
+@media only screen and (max-width:972px) {
+
+    .homeSubs form{
+        top: 120px;
+    }
+}
+@media only screen and (max-width:887px) {
+    .homeSubs h1{
+        font-size: 2.3rem;
+    }
+    .homeSubs form{
+        top: 100px;
+    }
+    .homeSubs form input{
+        padding: 15px 90px;
+    }
+    .homeSubs form button{
+        padding: 15px 20px;
+    }
+}
+@media only screen and (max-width:887px) {
+    .homeSubs h1{
+        font-size: 2rem;
+    }
+    .homeSubs form{
+        top: 85px;
+    }
+    .homeSubs form input{
+        padding: 15px 70px;
+    }
+    .homeSubs form button{
+        padding: 12px 20px;
+    }
+}
+@media only screen and (max-width:713px) {
+    .homeSubs h1{
+        font-size: 1.6rem;
+        top: 10px;
+    }
+    .homeSubs form{
+        top: 65px;
+    }
+    
+    .homeSubs form button{
+        padding: 10px 20px;
+    }
+    .homeSubs form input{
+        padding: 15px 60px;
+    }
+}
+@media only screen and (max-width:702px) {
+    .card{
+        margin-bottom: 19px;
+    }
+}
+@media only screen and (max-width:598px) {
+    .homeSubs h1{
+        font-size: 1.6rem;
+        top: 10px;
+    }
+    .homeSubs form{
+        top: 55px;
+    }
+    
+    .homeSubs form button{
+        padding: 10px 20px;
+    }
+    .homeSubs form input{
+        padding: 10px 60px;
+    }
+}
+@media only screen and (max-width:537px) {
+    .homeSubs h1{
+        font-size: 1.4rem;
+        /* top: 10px; */
+    }
+    .homeSubs form{
+        top: 55px;
+    }
+    
+    .homeSubs form button{
+        padding: 8px 20px;
+    }
+    .homeSubs form input{
+        padding: 8px 60px;
+    }
+}
+@media only screen and (max-width:478px) {
+    .homeSubs h1{
+        font-size: 1.3rem;
+    }
+    .homeSubs form{
+        top: 50px;
+    }
+    
+    .homeSubs form button{
+        padding: 6px 20px;
+    }
+    .homeSubs form input{
+        padding: 6px 60px;
+    }
+}
+@media only screen and (max-width:449px) {
+    .homeSubs h1{
+        font-size: 1.1rem;
+    }
+    .homeSubs form{
+        top: 40px;
+    }
+    
+    .homeSubs form button{
+        padding: 6px 20px;
+    }
+    .homeSubs form input{
+        padding: 6px 60px;
+    }
+}
+@media only screen and (max-width:400px) {
+    .homeSubs h1{
+        font-size: 1rem;
+    }
+    .homeSubs form{
+        top: 40px;
+    }
+    
+    .homeSubs form button{
+        padding: 4px 20px;
+    }
+    .homeSubs form input{
+        padding: 4px 60px;
+    }
+}
