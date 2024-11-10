@@ -22,9 +22,9 @@ function NavbarChild() {
     </div>
    
     <ul className={showNav ? 'li-list listActive' : 'li-list'}>
-    {navList.map((e) => {
+    {navList.map((e,i) => {
       return (
-        <li> <Link href={e.lnk} className={`lnk ${activeLink === e.lnk ? 'active' : ''}`}>{e.name}</Link> </li>
+        <li key={i}> <Link href={e.lnk} className={`lnk ${activeLink === e.lnk ? 'active' : ''}`}>{e.name}</Link> </li>
       )
     })}
     </ul>

@@ -1,6 +1,7 @@
 import React from 'react'
 import { hChildApi } from '@/utils/helper';
 import HomeSubs from '../HomeSubs/HomeSubs';
+import Image from 'next/image';
 
 function HomeChild() {
   
@@ -12,7 +13,13 @@ function HomeChild() {
       {
         hChildApi.map((element,index) => {
           return( <div className="card" key={index}>
-            <img src={`/images${element.img}`} alt="product" />
+            <Image
+             src={`/images${element.img}`} 
+             alt="product"
+             height={200}
+             width={200}
+             />
+             
             <h3>{element.head}</h3>
             <p>{element.para}</p>
         </div>);

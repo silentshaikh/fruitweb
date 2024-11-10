@@ -1,5 +1,6 @@
 'use client';
 import { prodApi } from '@/utils/helper';
+import Image from 'next/image';
 function ProductChild() {
   return (
   <>
@@ -9,7 +10,12 @@ function ProductChild() {
         prodApi.map((element,index) => {
           return (
             <div className="cardBox" key={index}>
-            <img src={`/images${element.img}`} alt="product" />
+            <Image
+             src={`/images${element.img}`}
+              alt="product"
+              height={200}
+              width={200}
+              />
             <h3>{element.head}</h3>
             <p>{element.para}</p>
       </div>
